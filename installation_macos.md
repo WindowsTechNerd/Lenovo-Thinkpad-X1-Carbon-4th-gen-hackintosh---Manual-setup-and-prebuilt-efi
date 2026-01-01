@@ -51,6 +51,9 @@ First we will need to mount our EFI partiton, even tho we formatted the USB driv
 
 To start, ofc you will need to download the repo of MountEFI, you can download it from github at https://github.com/corpnewt/MountEFI by clicking the green "Code" button and then clicking download zip
 
+<img width="488" height="485" alt="Screen Shot 2026-01-01 at 6 54 11 pm" src="https://github.com/user-attachments/assets/b619fbb2-850e-46f4-bdf0-27f1f650f085" />
+
+
 You must also get python 3 in order for this tool to work.
 
 Or if you want to use git clone, the command is "git clone https://github.com/corpnewt/MountEFI.git"
