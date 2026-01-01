@@ -1,4 +1,4 @@
-Manual Setup - macOS
+# Manual Setup - macOS
 
 To start off, run the following command in terminal:
 
