@@ -57,6 +57,8 @@ Or if you want to use git clone, the command is "git clone https://github.com/co
 
 Once you extract the downloaded zip by opening it, open the "MountEFI.command" file inside the extracted repo.
 
-Select your Opencore ESP number
+Select your Opencore ESP number and click enter:
 
 <img width="1394" height="954" alt="image" src="https://github.com/user-attachments/assets/9431bfb8-8ad4-4c76-9582-74c0b75004e1" />
+
+You will see that once we open the EFI partiton, its empty, This is where the fun begins🥳🤓
