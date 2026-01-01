@@ -8,7 +8,7 @@ It will give you options of macOS versions to download, type the macOS version n
 
 Anyways once it's finished downloading, you will be greeted with the install macOS [Version].app in your applications folder, once it's done you can proceed to "Setting up the usb and installer"
 
-Setting up the usb and installer:
+# Setting up the USB and installer:
 
 Now we'll be formatting the USB to prep it for both the macOS installer and the Opencore bootloader.
 
@@ -45,7 +45,7 @@ xcode-select --install
 This will also take some time so you may want to take a snack or sit back and relax.
 Once you are done, please proceed to Mounting and setting up Opencore ESP
 
-Mounting and setting up Opencore ESP:
+# Mounting and setting up Opencore ESP:
 
 First we will need to mount our EFI partiton, even tho we formatted the USB drive, the ESP isn't mounted yet, this is where our friend comes in, MountEFI
 
@@ -62,3 +62,5 @@ Select your Opencore ESP number and click enter:
 <img width="1394" height="954" alt="image" src="https://github.com/user-attachments/assets/9431bfb8-8ad4-4c76-9582-74c0b75004e1" />
 
 You will see that once we open the EFI partiton, its empty, This is where the fun begins🥳🤓
+
+<img width="1764" height="1096" alt="image" src="https://github.com/user-attachments/assets/d5846fc4-f759-4fa0-af4c-3c4ab78f65e5" />
