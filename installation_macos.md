@@ -45,7 +45,7 @@ xcode-select --install
 This will also take some time so you may want to take a snack or sit back and relax.
 Once you are done, please proceed to Mounting and setting up Opencore ESP
 
-# Mounting and setting up Opencore ESP:
+# Mounting and setting up Opencore ESP (Mounting):
 
 First we will need to mount our EFI partiton, even tho we formatted the USB drive, the ESP isn't mounted yet, this is where our friend comes in, MountEFI
 
@@ -67,3 +67,44 @@ Select your Opencore ESP number and click enter:
 You will see that once we open the EFI partiton, its empty, This is where the fun begins🥳🤓
 
 <img width="1764" height="1096" alt="image" src="https://github.com/user-attachments/assets/d5846fc4-f759-4fa0-af4c-3c4ab78f65e5" />
+
+# Mounting and setting up Opencore ESP (Setting up):
+
+First, we need the OpenCorePKG, you can download it from the github releases page at https://github.com/acidanthera/OpenCorePkg/releases/
+
+I would recommend using the DEBUG release for as there are more debugging options that you may need incase something doesn't work, becuase I am not solving a billon problems at once, it's not easy typing this day and night, If you are reading this, thanks for your support:)
+
+Anyways, once your zip has downloaded of the OpenCorePKG, in the root of the folder you extract by opening it's zip, you should find two folders in the root of it:
+
+1. IA32 (32-bit/x86)
+2. X64 (64-bit/x64)
+
+<img width="2064" height="1208" alt="image" src="https://github.com/user-attachments/assets/1637f329-b634-4c66-b70e-e40e2f62f5f9" />
+
+We are going with the "x64" folder becuase the Lenovo Thinkpad X1 Carbon 4th gen has a Intel CORE i7 vPro skylake gen cpu is 64-bit/x64.
+
+Inside the x64 folder, there should be an folder called "EFI"
+
+Place that folder inside the root of the ESP on your usb that we mounted eirlyier, this should be the layout of your efi folder: 
+
+<img width="2064" height="1994" alt="image" src="https://github.com/user-attachments/assets/94f40f70-3c0e-4f8b-b2c4-760f6639abb8" />
+
+Now go into /OC/Drivers in our EFI folder and delete all the files expect these ones (if needed)
+
+<img width="626" height="384" alt="Screen Shot 2026-01-01 at 9 23 32 pm" src="https://github.com/user-attachments/assets/c7ac1466-1835-4f18-9a9f-dfff3624fd58" />
+
+And now keep the following from /OC/Toolsif if you want (highly recommend):
+
+<img width="520" height="89" alt="Screen Shot 2026-01-01 at 9 28 00 pm" src="https://github.com/user-attachments/assets/49551d13-d610-4891-8327-493a10dd2872" />
+
+Now here's how much cleaner our EFI should look (This is the 100th line lol):
+
+<img width="2102" height="1438" alt="image" src="https://github.com/user-attachments/assets/65b8f8be-c7c6-49e3-9493-80cb39f00ce3" />
+
+Now we can place our firmware drivers for this big boy (I call it the big mac)
+
+See Gathering Files for our kexts.
+
+# Gathering Files
+
+It's now time for our firmware drivers, for most computers (including ours) we only need the two EFI drivers
