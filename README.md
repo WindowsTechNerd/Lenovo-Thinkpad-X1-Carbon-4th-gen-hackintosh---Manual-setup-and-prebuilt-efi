@@ -1,6 +1,19 @@
 # Lenovo-Thinkpad-X1-Carbon-4th-gen-hackintosh---Manual-setup-and-prebuilt-efi
 Welcome to the repo
 
-You can see manual setup at the installation.md file:)
+# Notes
 
-Credits to pichayakorn for as some of the kexts from his folder has helped me.
+This repo is using the bootloader "Opencore" due to unstablity with clover.
+
+Please don't follow this repo unless you want to do everything in the guide that I have managed to type before I type the rest tomorrow
+
+At the momment, only the guide for hackintoshs and macs that are running macOS is here in this repo at the momment
+
+You can see manual setup at the installation_.md file:)
+
+# Credits
+
+Credits to pichayakorn for as some of the kexts from his EFI helped me!
+Credits to the Opencore Devs for the amazing bootloader that made all this possible!
+Credits to cropnewt for most of the kexts and tools used in this repo!
+Credits to Apple for macOS!
