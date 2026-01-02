@@ -154,7 +154,39 @@ Unlike the other kext's, this setup requires some more manual stuff for as we ne
 
 Start by download the following stuff below
 
-1. USBToolBox (Tool, Get at https://github.com/USBToolBox/tool, Use release 0.1.1 for macOS, this tool is for making the UTBMap.kext file for our system, this kext we are going to make will not work on other machines.)
+1. USBToolBox (Tool, Get at https://github.com/USBToolBox/tool, this tool is for making the UTBMap.kext file for our system, this kext we are going to make will not work on other machines.)
 2. USBToolBox (Kext, Get at https://github.com/USBToolBox/kext/releases)
 
-End of guide, contuining later.
+Make sure to download these files on the big mac running Windows for as we need to make the UTBMap.kext file for it
+
+Now open the file you downloaded from github.com/USBToolBox/tool, it should be "Windows.exe" open it (You need python on the big mac for this)
+
+You should see this
+
+<img width="333" height="151" alt="image" src="https://github.com/user-attachments/assets/959122bd-98c3-493c-a4ab-cd752f0b49e5" />
+
+Type D and click enter for it to find your ports, make sure to fill in all your usb ports before typing D and click enter
+
+After waiting five seconds, type B and click enter
+Then type S and click enter
+And then type K and click enter, then your UTBMap.kext file should be ready
+Please the UTBMap.kext file in the kexts folder on your usb in /OC/Kexts and also place the USBToolBox.kext file from the USBToolBox (Kext) zip that you downloaded in there
+
+# Kexts (Wi-Fi)
+
+It's now time for the thing that every computer has to have these days, and probely where you are reading this guide from, that's right, the wi-fi!
+
+For our intel network card, we can only pick from two kexts:
+
+1. AirportItlwm.kext (This kext grants us native intel network card support with the native macOS wifi menu)
+2. Itlwm.kext (This kext is a more stable version of AirportItlwm.kext that supports macOS 11 and before)
+
+We will be going to use Itlwm, it should be in the AirportItlwm.kext releases page at https://github.com/OpenIntelWireless/itlwm/releases, please look at the video below if you don't see itlwm.kext on the releases page:
+
+https://github.com/user-attachments/assets/fa64f581-040b-434c-81e3-5e7549c131ee
+
+Anyways, ofc we have to place the kext in /OC/Kexts
+
+# Kexts (Bluetooth)
+
+I will write this an other time...
