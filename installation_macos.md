@@ -107,4 +107,54 @@ See Gathering Files for our kexts.
 
 # Gathering Files
 
-It's now time for our firmware drivers, for most computers (including ours) we only need the two EFI drivers
+It's now time for our firmware drivers, for most computers (including ours) we only need the two EFI drivers:
+
+1. HfsPlus.efi (Get at https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi)
+2. OpenRuntime.efi (Get at https://github.com/acidanthera/OpenCorePkg/releases)
+
+Both these firmware drivers are required.
+
+Please follow the steps below for our big mac's kexts.
+
+# Kexts (Required)
+
+For all systems and computers (including ours ofc) we need the two kexts below in order for any system from the opencore boot picker to be booted, these kexts, along with other ones, have to go in the /OC/Kexts folder in your EFI folder.
+
+1. Lilu.kext (Get at https://github.com/acidanthera/Lilu/releases, a kext to patch processes from other kexts)
+2. VirtualSMC (Get at https://github.com/acidanthera/VirtualSMC/releases, Emulates the SMC chip found on real macs, without this kext, only macOS isn't bootable)
+
+We will also need the following kexts below that are required for our computer to work with VirtualSMC:
+
+1. SMCProcessor.kext (Used for monitoring Intel CPU Temp)
+2. SMCSuperIO.kext (Used for monitoring Intel CPU fan speeds)
+3. SMCLightSensor.kext (Used for macOS to function with the ambient light sensor on the big mac, All thinkpads have this.)
+4. SMCBatteryManager.kext (Used for measuring battery readouts on laptops like ours.)
+
+You should find these kexts in the VirtualSMC
+
+We will also need the following required kexts for graphics:
+
+1. WhateverGreen (Get at https://github.com/acidanthera/WhateverGreen/releases, required for graphics, macOS won't boot without this.)
+
+# Kexts (Audio)
+
+We will need the following kexts for Audio:
+
+1. AppleALC (Get at https://github.com/acidanthera/AppleALC/releases)
+
+# Kexts (Ethernet)
+
+Our system uses an Intel NIC chipset and it is not based off 1211 so we will need the followng kext:
+
+1. IntelMasusi (Get at https://github.com/acidanthera/IntelMausi/releases)
+
+# Kexts (USB)
+
+Unlike the other kext's, this setup requires some more manual stuff for as we need to make a UTBMap.kext for our big mac
+
+Start by download the following stuff below
+
+1. USBToolBox (Tool, Get at https://github.com/USBToolBox/tool, Use release 0.1.1 for macOS, this tool is for making the UTBMap.kext file for our system, this kext we are going to make will not work on other machines.)
+2. USBToolBox (Kext, Get at https://github.com/USBToolBox/kext/releases)
+
+End of guide, contuining later.
