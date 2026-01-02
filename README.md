@@ -9,7 +9,7 @@ Please don't follow this repo unless you want to do everything in the guide that
 
 At the momment, only the guide for hackintoshs and macs that are running macOS is here in this repo at the momment
 
-You can see manual setup at the installation_.md file:)
+You can see manual setup at the installation_macos.md file:)
 
 # Credits
 
