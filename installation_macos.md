@@ -2,6 +2,7 @@
 
 Sections:
 - [Manual Setup - macOS](#manual-setup---macOS)
+- [Setting up the USB and installer](#setting-up-the-usb-and-installer:)
 
 To start off, run the following command in terminal:
 
