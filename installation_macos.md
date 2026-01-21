@@ -3,6 +3,7 @@
 Sections:
 - [Manual Setup - macOS](#manual-setup---macOS)
 - [Setting up the USB and installer](#setting-up-the-usb-and-installer)
+- [Mounting and setting up Opencore ESP](#mounting-and-setting-up-opencore-esp-(mounting))
 
 To start off, run the following command in terminal:
 
@@ -49,7 +50,7 @@ xcode-select --install
 This will also take some time so you may want to take a snack or sit back and relax.
 Once you are done, please proceed to Mounting and setting up Opencore ESP
 
-# Mounting and setting up Opencore ESP (Mounting):
+# Mounting and setting up Opencore ESP (Mounting)
 
 First we will need to mount our EFI partiton, even tho we formatted the USB drive, the ESP isn't mounted yet, this is where our friend comes in, MountEFI
 
