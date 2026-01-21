@@ -1,5 +1,8 @@
 # Manual Setup - macOS
 
+Sections:
+- [Manual Setup - macOS] #ManualSetup - macOS
+
 To start off, run the following command in terminal:
 
 $ softwareupdate --list-full-installers; echo; echo "Please enter version number you wish to download:"; read REPLY; [ -n "$REPLY" ] && softwareupdate --fetch-full-installer --full-installer-version "$REPLY"
