@@ -2,7 +2,7 @@
 
 Sections:
 - [Manual Setup - macOS](#manual-setup---macOS)
-- [Setting up the USB and installer](#setting-up-the-usb-and-installer:)
+- [Setting up the USB and installer](#setting-up-the-usb-and-installer)
 
 To start off, run the following command in terminal:
 
@@ -12,7 +12,7 @@ It will give you options of macOS versions to download, type the macOS version n
 
 Anyways once it's finished downloading, you will be greeted with the install macOS [Version].app in your applications folder, once it's done you can proceed to "Setting up the usb and installer"
 
-# Setting up the USB and installer:
+# Setting up the USB and installer
 
 Now we'll be formatting the USB to prep it for both the macOS installer and the Opencore bootloader.
 
