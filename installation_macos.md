@@ -194,4 +194,8 @@ Anyways, ofc we have to place the kext in /OC/Kexts
 
 # Kexts (Bluetooth)
 
-I will write this an other time...
+So now it's time for bluetooth. Because we have a intel wireless card, we will need the following kexts:
+
+1. BrcmPatchRAM - Used for uploading firmware on Broadcom Bluetooth chipset, required for all non-Apple/non-Fenvi Airport cards. Needs to be with BrcmFirmwareData.kext
+
+I shall do the rest later.
