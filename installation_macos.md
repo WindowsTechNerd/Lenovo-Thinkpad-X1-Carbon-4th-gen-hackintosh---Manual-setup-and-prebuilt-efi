@@ -198,4 +198,7 @@ So now it's time for bluetooth. Because we have a intel wireless card, we will n
 
 1. BrcmPatchRAM - Used for uploading firmware on Broadcom Bluetooth chipset, required for all non-Apple/non-Fenvi Airport cards. Needs to be with BrcmFirmwareData.kext
 
-I shall do the rest later.
+
+1. VoodooPS2 - Adds support for our PS2 keyboards, mouse and touchpads.
+
+2. B
